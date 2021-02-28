@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestParam
 
 @Component
-@FeignClient(name= "game-user", path = "/users")
+@FeignClient(name = "game-user", path = "/users")
 interface UserFeignClients {
 
     @GetMapping("/search")
